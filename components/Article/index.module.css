@@ -46,13 +46,30 @@
 }
 
 .thumbnail {
+  position: relative;
   width: 960px;
   height: auto;
-  margin-bottom: 64px;
+  z-index: 1;
+}
+
+.thumbnailFront {
+  width: 960px;
+  height: auto;
+  border-radius: 2rem;
+}
+
+.thumbnailBlur {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  filter: blur(40px) contrast(1.4);
+  user-select: none;
+  z-index: -1;
 }
 
 .content {
   width: 720px;
+  margin-top: 3rem;
 }
 
 .content *:first-child {
@@ -228,10 +245,19 @@
   .thumbnail {
     width: 100%;
     height: auto;
-    margin-bottom: 40px;
+  }
+
+  .thumbnailFront {
+    width: 100%;
+    height: auto;
+  }
+
+  .thumbnailBlur {
+    filter: blur(25px);
   }
 
   .content {
     width: 100%;
+    margin-top: 1.6rem;
   }
 }

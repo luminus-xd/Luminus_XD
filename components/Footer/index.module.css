@@ -1,4 +1,5 @@
 .footer {
+  margin-top: 32px;
   padding: 16px 24px;
   text-align: center;
   color: var(--color-text-sub);

@@ -18,6 +18,12 @@ export const metadata = {
     description: '好きなものについて',
     images: '/ogp.png',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Luminus',
+    domain: 'luminus.dev',
+    images: '/ogp.png',
+  },
   alternates: {
     canonical: '/',
   },

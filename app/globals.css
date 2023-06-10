@@ -49,3 +49,9 @@ ol,
 ul {
   list-style: none;
 }
+
+img {
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}

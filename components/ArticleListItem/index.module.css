@@ -18,6 +18,22 @@
   margin-bottom: 0.5rem;
 }
 
+.thumbnail {
+  position: relative;
+}
+
+.thumbnailFront > img {
+  border-radius: 1em;
+}
+
+.thumbnailBlur {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  filter: blur(20px);
+  z-index: -1;
+}
+
 @media (max-width: 640px) {
   .link {
     display: block;
