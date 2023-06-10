@@ -1,18 +1,21 @@
 import { getTagList } from '@/libs/microcms';
 import { LIMIT } from '@/constants';
+import { Inter } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Nav from '@/components/Nav';
 import './globals.css';
 import styles from './layout.module.css';
 
+const inter = Inter({ subsets: ['latin'] });
+
 export const metadata = {
   metadataBase: new URL(process.env.BASE_URL || 'http://localhost:3000'),
-  title: 'Simple Blog',
-  description: 'A simple blog presented by microCMS',
+  title: 'Luminus',
+  description: '好きなものについて',
   openGraph: {
-    title: 'Simple Blog',
-    description: 'A simple blog presented by microCMS',
+    title: 'Luminus',
+    description: '好きなものについて',
     images: '/ogp.png',
   },
   alternates: {
@@ -30,7 +33,7 @@ export default async function RootLayout({ children }: Props) {
   });
   return (
     <html lang="ja">
-      <body>
+      <body className={inter.className}>
         <Header />
         <Nav tags={tags.contents} />
         <main className={styles.main}>{children}</main>

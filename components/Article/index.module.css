@@ -42,6 +42,7 @@
 
 .writerName {
   margin-left: 16px;
+  font-weight: bold;
 }
 
 .thumbnail {
@@ -103,6 +104,10 @@
   display: block;
   overflow-x: auto;
   padding: 16px;
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  letter-spacing: 0.024em;
 }
 
 .content div[data-filename]::before {
@@ -110,8 +115,9 @@
   background-color: var(--color-bg-sub);
   content: attr(data-filename);
   margin: 1em 0 0;
-  font-family: menlo, inconsolata, monospace;
+  font-family: var(--font-inter);
   font-size: 0.8rem;
+  font-weight: bold;
   padding: 4px 16px;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
 }

@@ -2,11 +2,13 @@
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono',
     'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono',
     'Courier New', monospace;
+  --font-inter: '__Inter_0ec1f4', '__Inter_Fallback_0ec1f4';
   --color-text-main: #333;
   --color-text-sub: #999;
+  --color-code-text: #abb2bf;
   --color-bg-main: #fff;
   --color-bg-sub: #f3f3f3;
-  --color-bg-code: #fafafa;
+  --color-bg-code: #282c34;
   --color-border-dark: #ccc;
   --color-border: #ddd;
   --color-border-light: #f3f3f3;
@@ -35,6 +37,7 @@ body {
 
 code {
   font-family: menlo, inconsolata, monospace;
+  color: var(--color-code-text);
 }
 
 a {
