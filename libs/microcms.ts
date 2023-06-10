@@ -29,6 +29,7 @@ export type Blog = {
   thumbnail?: MicroCMSImage;
   tags?: Tag[];
   writer?: Writer;
+  tocVisible: boolean;
 };
 
 export type Article = Blog & MicroCMSContentId & MicroCMSDate;

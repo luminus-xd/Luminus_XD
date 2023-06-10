@@ -3,6 +3,7 @@ import { type Article } from '@/libs/microcms';
 import PublishedDate from '../Date';
 import styles from './index.module.css';
 import TagList from '../TagList';
+import ButtonLink from '../ButtonLink';
 import TableOfContents from '../TableOfContents';
 
 type Props = {
@@ -75,15 +76,20 @@ export default function Article({ data }: Props) {
           />
         </picture>
       </div>
-      <div className={styles.tocContainer}>
-        <TableOfContents toc={toc} />
-      </div>
+      {data.tocVisible && (
+        <div className={styles.tocContainer}>
+          <TableOfContents toc={toc} />
+        </div>
+      )}
       <div
         className={styles.content}
         dangerouslySetInnerHTML={{
           __html: `${formatRichText(data.content)}`,
         }}
       />
+      <div className={styles.topButton}>
+        <ButtonLink />
+      </div>
     </main>
   );
 }

@@ -216,6 +216,10 @@
   overflow: hidden;
 }
 
+.topButton {
+  margin-top: 80px;
+}
+
 @media (max-width: 640px) {
   .title {
     font-size: 2rem;
