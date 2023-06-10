@@ -1,9 +1,9 @@
 .toc {
+  --toc-padding: 16px;
   position: relative;
   width: 100%;
   background: rgba(0, 0, 0, 0.03);
   border-radius: var(--border-radius);
-  padding: 20px;
   font-weight: 500;
   line-height: 1.4;
   backdrop-filter: var(--filter-blur-bg);
@@ -18,22 +18,35 @@
   margin: 0 0 10;
   line-height: 1;
   cursor: pointer;
+  transition: color 300ms ease;
+  padding: var(--toc-padding);
+}
+
+.tocTitle:hover,
+.tocTitle:focus-within {
+  color: var(--color-primary-color-light);
 }
 
 .tocList {
-  margin-top: 10px;
+  padding: 0 var(--toc-padding) var(--toc-padding) var(--toc-padding);
   line-height: 1.6;
 }
 
 .tocLink {
   --toc-link-base-margin-left: 2em;
   display: block;
-  padding: 4px 0;
+  transition: color 300ms ease;
+}
+
+.tocLink:hover,
+.tocLink:focus-within {
+  color: var(--color-primary-color-light);
 }
 
 .tocLinkInner {
   display: block;
   border-bottom: 1px solid var(--color-border);
+  padding: 3px 0;
 }
 
 .tocLinkInner::before {

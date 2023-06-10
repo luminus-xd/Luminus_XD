@@ -3,6 +3,8 @@
     'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono',
     'Courier New', monospace;
   --font-inter: '__Inter_0ec1f4', '__Inter_Fallback_0ec1f4';
+  --color-primary-color: #2a5298;
+  --color-primary-color-light: #2b79d5;
   --color-text-main: #333;
   --color-text-sub: #999;
   --color-code-text: #abb2bf;
@@ -20,6 +22,11 @@
   --box-shadows-lg: 0 12px 34px 6px rgb(0 0 0 / 0.18);
   --box-shadows-xl: 0 25px 65px 0px rgb(0 0 0 / 0.35);
   --backdrop-filter-blur-bg: saturate(180%) blur(14px);
+  --gradient-primary-blue: linear-gradient(
+    60deg,
+    var(--color-primary-color) -20%,
+    var(--color-primary-color-light) 50%
+  );
 }
 
 * {
@@ -64,4 +71,15 @@ img {
   display: block;
   user-select: none;
   pointer-events: none;
+}
+
+@keyframes details-show {
+  from {
+    opacity: 0;
+    transform: var(--details-translate, translateY(-0.5em));
+  }
+}
+
+details[open] > *:not(summary) {
+  animation: details-show 150ms ease-in-out;
 }

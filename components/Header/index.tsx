@@ -4,9 +4,14 @@ import styles from './index.module.css';
 export default function Header() {
   return (
     <header className={styles.header}>
-      <Link href="/">
-        <h1 className={styles.headerTitle}>Luminus</h1>
-      </Link>
+      <div className={styles.headerLogo}>
+        <Link href="/">
+          <h1 className={styles.headerTitle}>Luminus</h1>
+        </Link>
+        <span className={styles.headerTitleShadow} aria-hidden="true">
+          Luminus
+        </span>
+      </div>
     </header>
   );
 }
