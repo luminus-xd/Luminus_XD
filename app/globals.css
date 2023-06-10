@@ -36,7 +36,7 @@ body {
 }
 
 code {
-  font-family: menlo, inconsolata, monospace;
+  font-family: var(--font-inter);
   color: var(--color-code-text);
 }
 
