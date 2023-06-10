@@ -1,14 +1,16 @@
-import { formatRichText } from '@/libs/utils';
+import { formatRichText, renderToc } from '@/libs/utils';
 import { type Article } from '@/libs/microcms';
 import PublishedDate from '../Date';
 import styles from './index.module.css';
 import TagList from '../TagList';
+import TableOfContents from '../TableOfContents';
 
 type Props = {
   data: Article;
 };
 
 export default function Article({ data }: Props) {
+  const toc = renderToc(data.content);
   return (
     <main className={styles.main}>
       <h1 className={styles.title}>{data.title}</h1>
@@ -72,6 +74,9 @@ export default function Article({ data }: Props) {
             height={data.thumbnail?.height}
           />
         </picture>
+      </div>
+      <div className={styles.tocContainer}>
+        <TableOfContents toc={toc} />
       </div>
       <div
         className={styles.content}

@@ -30,7 +30,7 @@
   position: absolute;
   inset: 0;
   margin: auto;
-  filter: blur(20px);
+  filter: blur(20px) saturate(180%);
   z-index: -1;
 }
 

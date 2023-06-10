@@ -14,12 +14,22 @@
   --color-border-light: #f3f3f3;
   --color-current: #eee;
   --border-radius: 4px;
+  --box-shadows-xs: 0 2px 8px 1px rgb(0 0 0 / 0.07), 0 1px 1px -1px rgb(0 0 0 / 0.04);
+  --box-shadows-sm: 0 2px 8px 2px rgb(0 0 0 / 0.07), 0 2px 4px -1px rgb(0 0 0 / 0.04);
+  --box-shadows-md: 0 12px 20px 6px rgb(0 0 0 / 0.08);
+  --box-shadows-lg: 0 12px 34px 6px rgb(0 0 0 / 0.18);
+  --box-shadows-xl: 0 25px 65px 0px rgb(0 0 0 / 0.35);
+  --backdrop-filter-blur-bg: saturate(180%) blur(14px);
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,

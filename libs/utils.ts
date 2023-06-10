@@ -27,3 +27,31 @@ export const formatRichText = (richText: string) => {
   });
   return $.html();
 };
+
+/**
+ * 目次のオブジェクト型
+ */
+export type TocEntry = {
+  name?: string;
+  text?: string;
+  id?: string;
+};
+
+/**
+ * 目次のオブジェクトを返す
+ * @param body
+ * @returns
+ */
+export const renderToc = (body: string): TocEntry[] => {
+  const $ = cheerio.load(body);
+  const headings = $('h1, h2, h3').toArray();
+  const toc: TocEntry[] = headings.map((data: any) => {
+    const name = data.name;
+    const id = data.attribs?.id;
+    const text =
+      data.type === 'tag' && data.children[0]?.type === 'text' ? data.children[0].data : undefined;
+    return { name, text, id };
+  });
+
+  return toc;
+};
