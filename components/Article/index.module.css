@@ -61,7 +61,7 @@
   position: absolute;
   inset: 0;
   margin: auto;
-  filter: blur(70px) saturate(180%);
+  filter: blur(30px) saturate(180%);
   user-select: none;
   z-index: -1;
 }
