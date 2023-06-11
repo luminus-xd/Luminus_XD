@@ -84,13 +84,13 @@ export default function Article({ data }: Props) {
             __html: `${formatRichText(data.content)}`,
           }}
         />
-        <div className={styles.toc}>
-          {data.tocVisible && (
+        {data.tocVisible && (
+          <div className={styles.toc}>
             <div className={styles.tocContainer}>
               <TableOfContents toc={toc} />
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
       <div className={styles.topButton}>
         <ButtonLink />
