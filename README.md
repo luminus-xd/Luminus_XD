@@ -1,8 +1,13 @@
-# シンプルなブログ
+# Luminus
 
-![](public/img-cover.png)
+![](public/ogp-luminus.png)
 
-microCMS 公式のシンプルなブログのテンプレートです。
+## 概要
+
+microCMS Templates サービスを作成しています。
+
+「シンプルなブログ」のテンプレートを独自にカスタマイズしたものです。
+https://templates.microcms.io/templates/detail/a530e59f-d66d-4b85-9ef5-4cf4288adb09
 
 ## 動作環境
 
@@ -36,13 +41,13 @@ microCMS 管理画面の URL（https://xxxxxxxx.microcms.io）の xxxxxxxx の�
 1. パッケージのインストール
 
 ```bash
-npm install
+pnpm install
 ```
 
 2. 開発環境の起動
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 3. 開発環境へのアクセス  
