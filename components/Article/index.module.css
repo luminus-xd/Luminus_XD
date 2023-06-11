@@ -221,6 +221,20 @@
   margin: 2rem 0;
 }
 
+.content > blockquote > figure > a > img {
+  width: 100%;
+  height: auto;
+}
+
+.content > blockquote > figure + p {
+  margin-top: 0.4rem;
+}
+
+.content > blockquote > figure > figcaption {
+  color: var(--color-text-sub);
+  font-size: 0.9em;
+}
+
 .content > hr {
   margin: 4rem 0;
   height: 1px;
