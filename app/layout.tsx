@@ -16,13 +16,13 @@ export const metadata = {
   openGraph: {
     title: 'Luminus',
     description: '好きなものについて',
-    images: '/ogp.png',
+    images: '/ogp-luminus.png',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Luminus',
     domain: 'luminus.dev',
-    images: '/ogp.png',
+    images: '/ogp-luminus.png',
   },
   alternates: {
     canonical: '/',
