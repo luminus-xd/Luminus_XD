@@ -13,7 +13,7 @@ type Props = {
 export default function Article({ data }: Props) {
   const toc = renderToc(data.content);
   return (
-    <main className={styles.main}>
+    <article className={styles.main}>
       <h1 className={styles.title}>{data.title}</h1>
       <TagList tags={data.tags} />
       <p className={styles.description}>{data.description}</p>
@@ -47,7 +47,7 @@ export default function Article({ data }: Props) {
           />
           <source
             type="image/webp"
-            srcSet={`${data.thumbnail?.url}?fm=webp&fit=crop&w=960&h=504 1x, ${data.thumbnail?.url}?fm=webp&fit=crop&w=960&h=504&dpr=2 2x`}
+            srcSet={`${data.thumbnail?.url}?fm=webp&fit=crop&w=960&h=540 1x, ${data.thumbnail?.url}?fm=webp&fit=crop&w=960&h=540&dpr=2 2x`}
           />
           <img
             src={data.thumbnail?.url}
@@ -65,7 +65,7 @@ export default function Article({ data }: Props) {
           />
           <source
             type="image/webp"
-            srcSet={`${data.thumbnail?.url}?fm=webp&fit=crop&w=960&h=504&q=10 1x, ${data.thumbnail?.url}?fm=webp&fit=crop&w=960&h=504&dpr=2&q=10 2x`}
+            srcSet={`${data.thumbnail?.url}?fm=webp&fit=crop&w=960&h=540&q=10 1x, ${data.thumbnail?.url}?fm=webp&fit=crop&w=960&h=540&dpr=2&q=10 2x`}
           />
           <img
             src={`${data.thumbnail?.url}?q=10`}
@@ -77,20 +77,24 @@ export default function Article({ data }: Props) {
           />
         </picture>
       </div>
-      {data.tocVisible && (
-        <div className={styles.tocContainer}>
-          <TableOfContents toc={toc} />
+      <div className={styles.column}>
+        <div
+          className={styles.content}
+          dangerouslySetInnerHTML={{
+            __html: `${formatRichText(data.content)}`,
+          }}
+        />
+        <div className={styles.toc}>
+          {data.tocVisible && (
+            <div className={styles.tocContainer}>
+              <TableOfContents toc={toc} />
+            </div>
+          )}
         </div>
-      )}
-      <div
-        className={styles.content}
-        dangerouslySetInnerHTML={{
-          __html: `${formatRichText(data.content)}`,
-        }}
-      />
+      </div>
       <div className={styles.topButton}>
         <ButtonLink />
       </div>
-    </main>
+    </article>
   );
 }

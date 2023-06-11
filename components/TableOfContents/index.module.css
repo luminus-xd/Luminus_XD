@@ -1,6 +1,5 @@
 .toc {
   --toc-padding: 16px;
-  position: relative;
   width: 100%;
   background: rgba(0, 0, 0, 0.03);
   border-radius: var(--border-radius);
@@ -33,7 +32,7 @@
 }
 
 .tocLink {
-  --toc-link-base-margin-left: 2em;
+  --toc-link-base-margin-left: 0.7em;
   display: block;
   transition: color 300ms ease;
 }

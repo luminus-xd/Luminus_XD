@@ -23,7 +23,7 @@ export default function ArticleListItem({ article }: Props) {
               />
               <source
                 type="image/webp"
-                srcSet={`${article.thumbnail?.url}?fm=webp&fit=crop&w=240&h=126 1x, ${article.thumbnail?.url}?fm=webp&fit=crop&w=240&h=126&dpr=2 2x`}
+                srcSet={`${article.thumbnail?.url}?fm=webp&fit=crop&w=240&h=135 1x, ${article.thumbnail?.url}?fm=webp&fit=crop&w=240&h=135&dpr=2 2x`}
               />
               <img
                 src={article.thumbnail?.url || `/noimage.png`}
@@ -41,7 +41,7 @@ export default function ArticleListItem({ article }: Props) {
               />
               <source
                 type="image/webp"
-                srcSet={`${article.thumbnail?.url}?fm=webp&fit=crop&w=240&h=126&q=10 1x, ${article.thumbnail?.url}?fm=webp&fit=crop&w=240&h=126&dpr=2&q=10 2x`}
+                srcSet={`${article.thumbnail?.url}?fm=webp&fit=crop&w=240&h=135&q=10 1x, ${article.thumbnail?.url}?fm=webp&fit=crop&w=240&h=135&dpr=2&q=10 2x`}
               />
               <img
                 src={`${article.thumbnail?.url}?q=10` || `/noimage.png`}
