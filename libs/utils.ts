@@ -44,7 +44,7 @@ export type TocEntry = {
  */
 export const renderToc = (body: string): TocEntry[] => {
   const $ = cheerio.load(body);
-  const headings = $('h1, h2, h3').toArray();
+  const headings = $('h2, h3, h4').toArray();
   const toc: TocEntry[] = headings.map((data: any) => {
     const name = data.name;
     const id = data.attribs?.id;
