@@ -3,6 +3,13 @@
   margin: 0 auto;
 }
 
+@media (max-width: 1040px) {
+  .main {
+    width: auto;
+    padding: 30px;
+  }
+}
+
 @media (max-width: 640px) {
   .main {
     width: auto;

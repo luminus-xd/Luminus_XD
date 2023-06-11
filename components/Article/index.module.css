@@ -249,6 +249,27 @@
   margin-top: 80px;
 }
 
+@media (max-width: 1020px) {
+  .thumbnail {
+    width: 100%;
+    height: auto;
+  }
+
+  .thumbnailFront {
+    width: 100%;
+    height: auto;
+    border-radius: 1.2rem;
+  }
+
+  .toc {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+
 @media (max-width: 640px) {
   .title {
     font-size: 2rem;
@@ -298,13 +319,5 @@
 
   .thumbnailBlur {
     filter: blur(30px) saturate(180%);
-  }
-
-  .toc {
-    display: none;
-  }
-
-  .content {
-    width: 100%;
   }
 }
