@@ -197,10 +197,17 @@
   text-decoration: underline;
 }
 
-.content > figure > img {
+.content > figure > img,
+.content > figure > a > img {
   max-width: 100%;
   height: auto;
   margin: 2rem 0;
+}
+
+.content > figure > figcaption {
+  margin-top: -2rem;
+  color: var(--color-text-sub);
+  font-size: 0.9em;
 }
 
 .content > strong {
