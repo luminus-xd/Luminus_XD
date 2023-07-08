@@ -1,13 +1,19 @@
 import { getTagList } from '@/libs/microcms';
 import { LIMIT } from '@/constants';
-import { Inter } from 'next/font/google';
+import { Inter, Zen_Kaku_Gothic_New } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Nav from '@/components/Nav';
 import './globals.css';
 import styles from './layout.module.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-inter' });
+const ZenKakuGothicNew = Zen_Kaku_Gothic_New({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-zen-kaku-gothic-new',
+});
 
 export const metadata = {
   metadataBase: new URL(process.env.BASE_URL || 'http://localhost:3000'),
@@ -39,7 +45,7 @@ export default async function RootLayout({ children }: Props) {
   });
   return (
     <html lang="ja">
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${ZenKakuGothicNew.variable}`}>
         <Header />
         <Nav tags={tags.contents} />
         <main className={styles.main}>{children}</main>
