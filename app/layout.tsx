@@ -19,6 +19,9 @@ export const metadata = {
   metadataBase: new URL(process.env.BASE_URL || 'http://localhost:3000'),
   title: 'Luminus',
   description: '好きなものについて',
+  icons: {
+    apple: '/apple-touch-icon.png',
+  },
   openGraph: {
     title: 'Luminus',
     description: '好きなものについて',
