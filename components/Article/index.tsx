@@ -31,6 +31,7 @@ export default function Article({ data }: Props) {
                 className={styles.writerIcon}
                 width={data.writer?.image?.width}
                 height={data.writer?.image?.height}
+                decoding="auto"
               />
             </picture>
             <span className={styles.writerName}>{data.writer?.name}</span>
@@ -55,6 +56,7 @@ export default function Article({ data }: Props) {
             className={styles.thumbnailFront}
             width={data.thumbnail?.width}
             height={data.thumbnail?.height}
+            decoding="auto"
           />
         </picture>
         <picture className={styles.thumbnailBlur}>
@@ -74,6 +76,7 @@ export default function Article({ data }: Props) {
             width={data.thumbnail?.width}
             height={data.thumbnail?.height}
             loading="eager"
+            decoding="auto"
           />
         </picture>
       </div>

@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "markuplint:recommended-react"
+  ],
+  "parser": {
+    ".[jt]sx$": "@markuplint/jsx-parser"
+  },
+  "specs": {
+    ".[jt]sx$": "@markuplint/react-spec"
+  },
+  "rules": {
+    "required-attr": true
+  },
+  "nodeRules": [
+    {
+      "selector": "img[decoding]",
+      "rules": {
+        "required-attr": false
+      }
+    }
+  ]
+}
