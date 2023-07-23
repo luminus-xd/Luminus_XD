@@ -1,7 +1,7 @@
 .tag {
   background-color: var(--color-bg-sub);
   padding: 4px 8px;
-  font-size: 0.8em;
+  font-size: 0.84em;
   border-radius: var(--border-radius);
   white-space: nowrap;
   transition: all 300ms ease-out;

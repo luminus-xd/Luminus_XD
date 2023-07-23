@@ -6,6 +6,12 @@
   position: relative;
 }
 
+.headerLogo a {
+  display: block;
+  width: 135px;
+  max-width: 100%;
+}
+
 .headerTitle {
   line-height: 1;
   text-transform: none;

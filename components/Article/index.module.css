@@ -97,8 +97,10 @@
 
 .tocContainer {
   position: sticky;
+  max-height: 100%;
   top: 32px;
   width: 100%;
+  overflow-y: auto;
 }
 
 .content {
@@ -125,19 +127,19 @@
 .content > h3 {
   font-size: 1.4rem;
   font-weight: bold;
-  margin: 2.4rem 0 1rem;
+  margin: 2.8rem 0 1rem;
 }
 
 .content > h4 {
   font-size: 1.2rem;
   font-weight: bold;
-  margin: 2rem 0 1rem;
+  margin: 2.4rem 0 1rem;
 }
 
 .content > h5 {
   font-size: 1.1rem;
   font-weight: bold;
-  margin: 1.6rem 0 1rem;
+  margin: 2rem 0 1rem;
 }
 
 .content > p {
@@ -151,6 +153,7 @@
 
 .content pre > code {
   background-color: var(--color-bg-code);
+  font-size: 0.9em;
   display: block;
   overflow-x: auto;
   padding: 16px;
@@ -283,6 +286,10 @@
 }
 
 @media (max-width: 1020px) {
+  .column {
+    flex-wrap: wrap;
+  }
+
   .thumbnail {
     width: 100%;
     height: auto;
@@ -295,10 +302,15 @@
   }
 
   .toc {
-    display: none;
+    order: 1;
+    width: 280px;
+    max-width: 100%;
+    margin: 0 auto;
+    /* display: none; */
   }
 
   .content {
+    order: 2;
     width: 100%;
   }
 }
@@ -315,6 +327,10 @@
     color: var(--color-text-sub);
     margin: 24px 0 40px;
     text-align: center;
+  }
+
+  .toc {
+    width: 100%;
   }
 
   .meta {

@@ -2,19 +2,17 @@
   --toc-padding: 16px;
   width: 100%;
   background: rgba(0, 0, 0, 0.03);
-  border-radius: var(--border-radius);
+  border-radius: calc(var(--border-radius) * 2);
   font-weight: 500;
   line-height: 1.4;
-  backdrop-filter: var(--filter-blur-bg);
-  box-shadow: var(--box-shadows-sm);
   z-index: 1;
 }
 
 .tocTitle {
   width: 100%;
   user-select: none;
+  font-size: 1.04em;
   font-weight: bold;
-  margin: 0 0 10;
   line-height: 1;
   cursor: pointer;
   transition: color 300ms ease;
@@ -27,6 +25,7 @@
 }
 
 .tocList {
+  font-size: 0.9em;
   padding: 0 var(--toc-padding) var(--toc-padding) var(--toc-padding);
   line-height: 1.6;
 }
