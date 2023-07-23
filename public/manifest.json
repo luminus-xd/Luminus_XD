@@ -1,0 +1,16 @@
+{
+  "name": "Luminus",
+  "short_name": "Luminus",
+  "description": "ルミナスの雑多な趣味を吐き出すブログ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f9fd",
+  "theme_color": "#2a5298",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
