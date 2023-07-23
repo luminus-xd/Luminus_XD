@@ -9,7 +9,7 @@ export default function TableOfContents({ toc }: Props) {
   return (
     <nav className={styles.toc} aria-labelledby="toc">
       <details open>
-        <summary id="toc" className={styles.tocTitle}>
+        <summary id={`toc`} className={styles.tocTitle}>
           目次
         </summary>
         <ul className={styles.tocList}>

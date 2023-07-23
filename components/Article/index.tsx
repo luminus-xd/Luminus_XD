@@ -31,6 +31,7 @@ export default function Article({ data }: Props) {
                 className={styles.writerIcon}
                 width={data.writer?.image?.width}
                 height={data.writer?.image?.height}
+                decoding="auto"
               />
             </picture>
             <span className={styles.writerName}>{data.writer?.name}</span>
@@ -47,7 +48,7 @@ export default function Article({ data }: Props) {
           />
           <source
             type="image/webp"
-            srcSet={`${data.thumbnail?.url}?fm=webp&fit=crop&w=960&h=540 1x, ${data.thumbnail?.url}?fm=webp&fit=crop&w=960&h=540&dpr=2 2x`}
+            srcSet={`${data.thumbnail?.url}?fm=webp&fit=crop&w=1200&h=630 1x, ${data.thumbnail?.url}?fm=webp&fit=crop&w=1200&h=630&dpr=2 2x`}
           />
           <img
             src={data.thumbnail?.url}
@@ -55,6 +56,7 @@ export default function Article({ data }: Props) {
             className={styles.thumbnailFront}
             width={data.thumbnail?.width}
             height={data.thumbnail?.height}
+            decoding="auto"
           />
         </picture>
         <picture className={styles.thumbnailBlur}>
@@ -65,7 +67,7 @@ export default function Article({ data }: Props) {
           />
           <source
             type="image/webp"
-            srcSet={`${data.thumbnail?.url}?fm=webp&fit=crop&w=960&h=540&q=10 1x, ${data.thumbnail?.url}?fm=webp&fit=crop&w=960&h=540&dpr=2&q=10 2x`}
+            srcSet={`${data.thumbnail?.url}?fm=webp&fit=crop&w=1200&h=630&q=10 1x, ${data.thumbnail?.url}?fm=webp&fit=crop&w=1200&h=630&dpr=2&q=10 2x`}
           />
           <img
             src={`${data.thumbnail?.url}?q=10`}
@@ -74,6 +76,7 @@ export default function Article({ data }: Props) {
             width={data.thumbnail?.width}
             height={data.thumbnail?.height}
             loading="eager"
+            decoding="auto"
           />
         </picture>
       </div>
