@@ -47,12 +47,14 @@
 
 .thumbnail {
   position: relative;
-  width: 960px;
+  width: 1200px;
+  max-width: 960px;
   height: auto;
 }
 
 .thumbnailFront {
-  width: 960px;
+  width: 1200px;
+  max-width: 960px;
   height: auto;
   border-radius: 2rem;
   opacity: 0;
