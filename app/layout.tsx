@@ -29,6 +29,7 @@ export const metadata = {
     title: 'Luminus',
     domain: 'luminus.dev',
     images: '/ogp-luminus.png',
+    creator: '@midnight_dev2',
   },
   alternates: {
     canonical: '/',
