@@ -9,7 +9,7 @@ import styles from './layout.module.css';
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-inter' });
 const ZenKakuGothicNew = Zen_Kaku_Gothic_New({
-  weight: ['400', '700'],
+  weight: ['500', '700'],
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-zen-kaku-gothic-new',

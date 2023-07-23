@@ -6,13 +6,13 @@
 }
 
 .title {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   margin-bottom: 24px;
   text-align: center;
 }
 
 .description {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--color-text-sub);
   margin: 24px 40px;
   text-align: center;
@@ -97,8 +97,10 @@
 
 .tocContainer {
   position: sticky;
+  max-height: 100%;
   top: 32px;
   width: 100%;
+  overflow-y: auto;
 }
 
 .content {
@@ -119,7 +121,7 @@
 .content > h2 {
   font-size: 1.6rem;
   font-weight: bold;
-  margin: 2.8em 0 1rem;
+  margin: 2.8rem 0 1rem;
 }
 
 .content > h3 {
@@ -131,17 +133,17 @@
 .content > h4 {
   font-size: 1.2rem;
   font-weight: bold;
-  margin: 2.8rem 0 1rem;
+  margin: 2.4rem 0 1rem;
 }
 
 .content > h5 {
   font-size: 1.1rem;
   font-weight: bold;
-  margin: 2.8rem 0 1rem;
+  margin: 2rem 0 1rem;
 }
 
 .content > p {
-  margin: 2rem 0 0.5rem;
+  margin: 1.4rem 0 0.5rem;
   line-height: 2;
 }
 
@@ -151,6 +153,7 @@
 
 .content pre > code {
   background-color: var(--color-bg-code);
+  font-size: 0.9em;
   display: block;
   overflow-x: auto;
   padding: 16px;
@@ -270,11 +273,23 @@
   overflow: hidden;
 }
 
+.content span.marker {
+  background-color: var(--color-bg-sub-2);
+  padding: 0.2em 0.4em;
+  border-radius: var(--border-radius);
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
 .topButton {
   margin-top: 80px;
 }
 
 @media (max-width: 1020px) {
+  .column {
+    flex-wrap: wrap;
+  }
+
   .thumbnail {
     width: 100%;
     height: auto;
@@ -287,10 +302,15 @@
   }
 
   .toc {
-    display: none;
+    order: 1;
+    width: 280px;
+    max-width: 100%;
+    margin: 0 auto;
+    /* display: none; */
   }
 
   .content {
+    order: 2;
     width: 100%;
   }
 }
@@ -307,6 +327,10 @@
     color: var(--color-text-sub);
     margin: 24px 0 40px;
     text-align: center;
+  }
+
+  .toc {
+    width: 100%;
   }
 
   .meta {
