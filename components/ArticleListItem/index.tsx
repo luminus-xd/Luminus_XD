@@ -31,6 +31,7 @@ export default function ArticleListItem({ article }: Props) {
                 className={styles.image}
                 width={article.thumbnail?.width}
                 height={article.thumbnail?.height}
+                decoding="auto"
               />
             </picture>
             <picture className={styles.thumbnailBlur}>
@@ -50,6 +51,7 @@ export default function ArticleListItem({ article }: Props) {
                 width={article.thumbnail?.width}
                 height={article.thumbnail?.height}
                 loading="eager"
+                decoding="auto"
               />
             </picture>
           </div>
