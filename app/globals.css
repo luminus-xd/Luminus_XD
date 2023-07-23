@@ -1,11 +1,12 @@
 :root {
   --color-primary-color: #2a5298;
   --color-primary-color-light: #2b79d5;
-  --color-text-main: #333;
+  --color-text-main: #393939;
   --color-text-sub: #999;
   --color-code-text: #abb2bf;
   --color-bg-main: #fff;
   --color-bg-sub: #f3f3f3;
+  --color-bg-sub-2: #f8f9fd;
   --color-bg-code: #282c34;
   --color-border-dark: #ccc;
   --color-border: #ddd;
@@ -45,8 +46,11 @@ body {
   font-family: var(--font-inter), var(--font-zen-kaku-gothic-new), -apple-system, BlinkMacSystemFont,
     'Helvetica Neue', YuGothic, 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, Arial, 'メイリオ',
     Meiryo, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.028em;
   color: var(--color-text-main);
   line-height: 1.8;
+  font-size: 1.1em;
 }
 
 code {
@@ -69,4 +73,10 @@ img {
   display: block;
   user-select: none;
   pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 1em;
+  }
 }

@@ -6,13 +6,13 @@
 }
 
 .title {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   margin-bottom: 24px;
   text-align: center;
 }
 
 .description {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--color-text-sub);
   margin: 24px 40px;
   text-align: center;
@@ -119,29 +119,29 @@
 .content > h2 {
   font-size: 1.6rem;
   font-weight: bold;
-  margin: 2.8em 0 1rem;
+  margin: 2.8rem 0 1rem;
 }
 
 .content > h3 {
   font-size: 1.4rem;
   font-weight: bold;
-  margin: 2.8rem 0 1rem;
+  margin: 2.4rem 0 1rem;
 }
 
 .content > h4 {
   font-size: 1.2rem;
   font-weight: bold;
-  margin: 2.8rem 0 1rem;
+  margin: 2rem 0 1rem;
 }
 
 .content > h5 {
   font-size: 1.1rem;
   font-weight: bold;
-  margin: 2.8rem 0 1rem;
+  margin: 1.6rem 0 1rem;
 }
 
 .content > p {
-  margin: 2rem 0 0.5rem;
+  margin: 1.4rem 0 0.5rem;
   line-height: 2;
 }
 
@@ -268,6 +268,14 @@
   position: relative;
   border-radius: var(--border-radius);
   overflow: hidden;
+}
+
+.content span.marker {
+  background-color: var(--color-bg-sub-2);
+  padding: 0.2em 0.4em;
+  border-radius: var(--border-radius);
+  font-size: 0.9em;
+  font-weight: bold;
 }
 
 .topButton {
