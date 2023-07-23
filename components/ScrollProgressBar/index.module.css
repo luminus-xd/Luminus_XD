@@ -1,0 +1,30 @@
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 3px;
+  width: 100%;
+  color: black;
+  border: none;
+}
+
+.progress {
+  appearance: none;
+}
+
+.progress::-webkit-progress-bar {
+  background: transparent;
+}
+
+.progress::-moz-progress-bar {
+  background: transparent;
+}
+
+.progress::-webkit-progress-value {
+  background: linear-gradient(135deg, #7dc7f8 10%, #027cd9 100%);
+}
+
+.progress::-moz-progress-bar {
+  background: linear-gradient(135deg, #7dc7f8 10%, #027cd9 100%);
+}
