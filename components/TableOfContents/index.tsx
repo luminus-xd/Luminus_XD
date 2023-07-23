@@ -10,7 +10,7 @@ type Props = {
 };
 
 export default function TableOfContents({ toc }: Props) {
-  const isTablet = useMediaQuery(`(max-width: ${MD_BREAKPOINT}px})`);
+  const isTablet = useMediaQuery(`(max-width: ${MD_BREAKPOINT}px)`);
 
   return (
     <nav className={styles.toc} aria-labelledby="toc">
