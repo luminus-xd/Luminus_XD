@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { Tag } from '@/libs/microcms';
 import TagListItem from '../TagListItem';
 import styles from './index.module.css';
@@ -7,7 +8,7 @@ type Props = {
   hasLink?: boolean;
 };
 
-export default function TagList({ tags, hasLink = true }: Props) {
+export function TagList({ tags, hasLink = true }: Props) {
   if (!tags) {
     return null;
   }
@@ -21,3 +22,5 @@ export default function TagList({ tags, hasLink = true }: Props) {
     </ul>
   );
 }
+
+export default memo(TagList);
