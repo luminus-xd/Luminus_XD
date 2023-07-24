@@ -4,7 +4,9 @@ import PublishedDate from '../Date';
 import styles from './index.module.css';
 import TagList from '../TagList';
 import ButtonLink from '../ButtonLink';
-import TableOfContents from '../TableOfContents';
+import dynamic from 'next/dynamic';
+
+const TableOfContents = dynamic(() => import('../TableOfContents'));
 
 type Props = {
   data: Article;
