@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { getTagList } from '@/libs/microcms';
 import { LIMIT } from '@/constants';
 import { Inter, Zen_Kaku_Gothic_New } from 'next/font/google';
@@ -56,6 +57,7 @@ export default async function RootLayout({ children }: Props) {
         <Nav tags={tags.contents} />
         <main className={styles.main}>{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
