@@ -21,7 +21,7 @@
 
 .tocTitle:hover,
 .tocTitle:focus-within {
-  color: var(--color-primary-color-light);
+  color: var(--color-primary-light);
 }
 
 .tocList {
@@ -38,7 +38,7 @@
 
 .tocLink:hover,
 .tocLink:focus-within {
-  color: var(--color-primary-color-light);
+  color: var(--color-primary-light);
 }
 
 .tocLinkInner {

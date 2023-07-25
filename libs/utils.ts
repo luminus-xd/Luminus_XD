@@ -24,6 +24,7 @@ export const formatRichText = (richText: string) => {
     const lang = $(elm).attr('class');
     const res = highlight($(elm).text(), lang);
     $(elm).html(res.value);
+    $(elm).attr('tabindex', '0');
   });
   return $.html();
 };

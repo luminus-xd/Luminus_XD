@@ -1,6 +1,6 @@
 :root {
-  --color-primary-color: #2a5298;
-  --color-primary-color-light: #2b79d5;
+  --color-primary: #2a5298;
+  --color-primary-light: #2b79d5;
   --color-text-main: #393939;
   --color-text-sub: #999;
   --color-code-text: #abb2bf;
@@ -21,8 +21,8 @@
   --backdrop-filter-blur-bg: saturate(180%) blur(14px);
   --gradient-primary-blue: linear-gradient(
     60deg,
-    var(--color-primary-color) -20%,
-    var(--color-primary-color-light) 50%
+    var(--color-primary) -20%,
+    var(--color-primary-light) 50%
   );
 }
 

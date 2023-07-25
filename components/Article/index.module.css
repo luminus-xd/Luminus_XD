@@ -163,6 +163,10 @@
   letter-spacing: 0.024em;
 }
 
+.content pre > code:focus-within {
+  outline: 2px solid var(--color-primary-light);
+}
+
 .content div[data-filename]::before {
   display: inline-block;
   background-color: var(--color-bg-sub);
