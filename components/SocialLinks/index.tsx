@@ -18,7 +18,7 @@ export default function SocailLinks() {
             <Image
               className={styles.twitterX}
               src="/images/twitter-x-logo.svg"
-              alt="X（旧Twitter）"
+              alt="LuminusのX（旧Twitter）"
               width={40}
               height={40}
             />
@@ -35,7 +35,7 @@ export default function SocailLinks() {
             <Image
               className={styles.github}
               src="/images/github-mark.svg"
-              alt="GitHub"
+              alt="LuminusのGitHub"
               width={40}
               height={40}
             />
