@@ -10,7 +10,7 @@ const ScrollProgressBar = () => {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     const scrollHeight =
       document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = scrollTop / scrollHeight;
+    const scrolled = (scrollTop / scrollHeight) * 100;
 
     setScrollTop(scrolled);
   }, []);
@@ -21,7 +21,9 @@ const ScrollProgressBar = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, [onScroll]);
 
-  return <progress value={scrollRatio} max="1" className={styles.progress} />;
+  return (
+    <progress value={scrollRatio} max="100" className={styles.progress} aria-label="記事の読了率" />
+  );
 };
 
 export default ScrollProgressBar;
