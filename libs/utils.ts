@@ -16,7 +16,7 @@ if (!process.env.BASE_URL) {
 export const formatDate = (date: string) => {
   const utcDate = new Date(date);
   const jstDate = utcToZonedTime(utcDate, 'Asia/Tokyo');
-  return format(jstDate, 'd MMMM, yyyy');
+  return format(jstDate, 'yyyy-MM-dd');
 };
 
 /**
