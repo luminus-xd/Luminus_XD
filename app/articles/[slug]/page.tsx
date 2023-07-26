@@ -36,6 +36,12 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
   };
 }
 
+/**
+ * 記事の詳細ページ
+ * @param params.slug 記事のid
+ * @param searchParams.dk 記事の下書きキー
+ * @returns
+ */
 export default async function Page({ params, searchParams }: Props) {
   const data = await getDetail(params.slug, {
     draftKey: searchParams.dk,

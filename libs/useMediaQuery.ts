@@ -8,7 +8,7 @@ type MediaQueryList = {
 
 /**
  * matchMediaをReactで使えるようにしたカスタムフック
- * @param query
+ * @param query MediaQuery
  * @returns
  */
 const useMediaQuery = (query: string): boolean => {

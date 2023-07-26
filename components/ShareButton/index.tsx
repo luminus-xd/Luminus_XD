@@ -10,6 +10,9 @@ type Props = {
 
 /**
  * 記事をX（旧ツイッター）にツイートするボタン
+ * PropsからTwitterシェア用のURLを生成している
+ * @param articleId 記事ID
+ * @param articleTitle 記事タイトル
  * @returns
  */
 export default function ShareButton({ articleId, articleTitle }: Props) {

@@ -4,6 +4,10 @@ import { useCallback, useRef, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import styles from './index.module.css';
 
+/**
+ * 検索フィールドのコンポーネント
+ * @returns
+ */
 export default function SearchField() {
   const [composing, setComposition] = useState(false);
   const startComposition = () => setComposition(true);

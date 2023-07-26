@@ -1,6 +1,10 @@
 import SocialLinks from '../SocialLinks';
 import styles from './index.module.css';
 
+/**
+ * フッターのコンポーネント
+ * @returns
+ */
 export default function Footer() {
   return (
     <footer className={styles.footer}>

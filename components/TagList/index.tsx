@@ -8,6 +8,12 @@ type Props = {
   hasLink?: boolean;
 };
 
+/**
+ * タグの一覧を表示するコンポーネント
+ * @param tags 全てのタグ
+ * @param hasLink リンクを付けるかどうか
+ * @returns
+ */
 export function TagList({ tags, hasLink = true }: Props) {
   if (!tags) {
     return null;

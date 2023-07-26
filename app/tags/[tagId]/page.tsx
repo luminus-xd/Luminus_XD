@@ -11,6 +11,11 @@ type Props = {
 
 export const revalidate = 60;
 
+/**
+ * タグで絞り込んだ記事一覧ページ
+ * @param params.tagId タグのid
+ * @returns
+ */
 export default async function Page({ params }: Props) {
   const { tagId } = params;
   const data = await getList({

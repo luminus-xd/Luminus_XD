@@ -9,6 +9,11 @@ type Props = {
   article: Article;
 };
 
+/**
+ * 記事一覧の各記事を表示するコンポーネント
+ * @param article microCMSから取得した記事詳細データ
+ * @returns
+ */
 export default function ArticleListItem({ article }: Props) {
   return (
     <li className={styles.list}>

@@ -1,6 +1,10 @@
 import Link from 'next/link';
 import styles from './index.module.css';
 
+/**
+ * ヘッダーのコンポーネント
+ * @returns
+ */
 export default function Header() {
   return (
     <header className={styles.header}>

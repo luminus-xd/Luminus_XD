@@ -9,6 +9,14 @@ type Props = {
   q?: string;
 };
 
+/**
+ * ページネーションのコンポーネント
+ * @param totalCount ページネーションの総数
+ * @param current 現在のページ
+ * @param basePath ベースパス
+ * @param q ページネーションのクエリパラメータ
+ * @returns
+ */
 export default function Pagination({ totalCount, current = 1, basePath = '', q }: Props) {
   const pages = Array.from({ length: Math.ceil(totalCount / LIMIT) }).map((_, i) => i + 1);
   return (

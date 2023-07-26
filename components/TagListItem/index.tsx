@@ -7,6 +7,12 @@ type Props = {
   hasLink?: boolean;
 };
 
+/**
+ * タグの要素を構築しているコンポーネント
+ * @param tag タグデータ
+ * @param hasLink リンクを付けるかどうか
+ * @returns
+ */
 export default function TagListItem({ tag, hasLink = true }: Props) {
   if (hasLink) {
     return (

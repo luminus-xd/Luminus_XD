@@ -5,6 +5,11 @@ type Props = {
   articles?: Article[];
 };
 
+/**
+ * 記事のリストを表示するコンポーネント
+ * @param articles microCMSから取得した記事一覧データ
+ * @returns
+ */
 export default function ArticleList({ articles }: Props) {
   if (!articles) {
     return null;

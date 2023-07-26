@@ -10,6 +10,11 @@ type Props = {
 
 export const revalidate = 60;
 
+/**
+ * 検索結果ページ
+ * @param params.q 検索クエリ
+ * @returns
+ */
 export default async function Page({ searchParams }: Props) {
   const data = await getList({
     q: searchParams.q,
