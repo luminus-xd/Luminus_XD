@@ -4,6 +4,10 @@ import cheerio from 'cheerio';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/atom-one-dark.css';
 
+if (!process.env.BASE_URL) {
+  throw new Error('BASE_URL is required');
+}
+
 export const formatDate = (date: string) => {
   const utcDate = new Date(date);
   const jstDate = utcToZonedTime(utcDate, 'Asia/Tokyo');
@@ -55,4 +59,12 @@ export const renderToc = (body: string): TocEntry[] => {
   });
 
   return toc;
+};
+
+/**
+ * BASE_URLを返す
+ * @returns
+ */
+export const getDomain = () => {
+  return process.env.BASE_URL;
 };
