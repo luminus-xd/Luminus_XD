@@ -33,7 +33,7 @@ export default function ShareButton({ articleId, articleTitle }: Props) {
         aria-hidden="true"
         data-clone="true"
       />
-      <span>記事をツイートする</span>
+      <span className={styles.shareButtonText}>記事をツイートする</span>
     </Link>
   );
 }

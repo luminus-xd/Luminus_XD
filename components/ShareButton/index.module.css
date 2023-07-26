@@ -35,7 +35,6 @@
 .shareButton:hover,
 .shareButton:focus-within {
   --_p: 134%;
-  color: #fff;
   box-shadow: 0 0 32px 0 rgb(29, 161, 242), 0 0 20px 10px rgba(29, 161, 242, 0.64);
 }
 
@@ -49,8 +48,12 @@
   opacity: 0;
 }
 
-.twitterShareBlock {
-  display: grid;
-  justify-items: center;
-  margin-top: 24px;
+.shareButtonText {
+  color: #000;
+  transition: color 800ms;
+}
+
+.shareButton:hover .shareButtonText,
+.shareButton:focus-within .shareButtonText {
+  color: #fff;
 }
