@@ -4,6 +4,7 @@ import PublishedDate from '../Date';
 import styles from './index.module.css';
 import TagList from '../TagList';
 import ButtonLink from '../ButtonLink';
+import ShareButton from '../ShareButton';
 import dynamic from 'next/dynamic';
 
 const TableOfContents = dynamic(() => import('../TableOfContents'));
@@ -33,7 +34,7 @@ export default function Article({ data }: Props) {
                 className={styles.writerIcon}
                 width={data.writer?.image?.width}
                 height={data.writer?.image?.height}
-                decoding="auto"
+                decoding="async"
               />
             </picture>
             <span className={styles.writerName}>{data.writer?.name}</span>
@@ -58,7 +59,7 @@ export default function Article({ data }: Props) {
             className={styles.thumbnailFront}
             width={data.thumbnail?.width}
             height={data.thumbnail?.height}
-            decoding="auto"
+            decoding="async"
           />
         </picture>
         <picture className={styles.thumbnailBlur}>
@@ -78,17 +79,22 @@ export default function Article({ data }: Props) {
             width={data.thumbnail?.width}
             height={data.thumbnail?.height}
             loading="eager"
-            decoding="auto"
+            decoding="async"
           />
         </picture>
       </div>
       <div className={styles.column}>
-        <div
-          className={styles.content}
-          dangerouslySetInnerHTML={{
-            __html: `${formatRichText(data.content)}`,
-          }}
-        />
+        <div className={styles.content}>
+          <div
+            className={styles.cms}
+            dangerouslySetInnerHTML={{
+              __html: `${formatRichText(data.content)}`,
+            }}
+          />
+          <div className={styles.twitterShareBlock}>
+            <ShareButton articleId={data.id} articleTitle={data.title} />
+          </div>
+        </div>
         {data.tocVisible && (
           <div className={styles.toc}>
             <div className={styles.tocContainer}>
