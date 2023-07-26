@@ -12,7 +12,10 @@ export default function SocailLinks() {
         <Link href="https://twitter.com/Midnight_dev2" target="_blank" rel="noopener noreferrer">
           <motion.div
             className={styles.motion}
-            whileHover={{ scale: 1.2, shadow: '0px 0px 8px rgb(255, 255, 255)' }}
+            whileHover={{
+              scale: 1.2,
+              boxShadow: '0 0 32px 0 rgb(29, 161, 242), 0 0 20px 10px rgba(29, 161, 242, 0.64)',
+            }}
             transition={{ type: 'spring', stiffness: 400, damping: 10 }}
           >
             <Image
@@ -29,7 +32,10 @@ export default function SocailLinks() {
         <Link href="https://github.com/luminus-xd" target="_blank" rel="noopener noreferrer">
           <motion.div
             className={styles.motion}
-            whileHover={{ scale: 1.2 }}
+            whileHover={{
+              scale: 1.2,
+              boxShadow: '0 0 8px 0 rgba(14, 12, 13, 0.72)',
+            }}
             transition={{ type: 'spring', stiffness: 400, damping: 10 }}
           >
             <Image
