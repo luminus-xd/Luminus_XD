@@ -13,6 +13,12 @@ type Props = {
   data: Article;
 };
 
+/**
+ * 記事のコンポーネント
+ * microCMSから取得したデータを受け取り、記事を表示する
+ * @param data 記事データ
+ * @returns
+ */
 export default function Article({ data }: Props) {
   const toc = renderToc(data.content);
   return (

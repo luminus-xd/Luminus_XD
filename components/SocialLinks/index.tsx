@@ -5,6 +5,10 @@ import Image from 'next/image';
 import styles from './index.module.css';
 import { motion } from 'framer-motion';
 
+/**
+ * Luminusのソーシャルリンクを表示するコンポーネント
+ * @returns
+ */
 export default function SocailLinks() {
   return (
     <ul className={styles.links}>

@@ -8,6 +8,13 @@ type Props = {
   articleTitle: string;
 };
 
+/**
+ * 記事をX（旧ツイッター）にツイートするボタン
+ * PropsからTwitterシェア用のURLを生成している
+ * @param articleId 記事ID
+ * @param articleTitle 記事タイトル
+ * @returns
+ */
 export default function ShareButton({ articleId, articleTitle }: Props) {
   const domain = getDomain();
   return (
@@ -33,7 +40,7 @@ export default function ShareButton({ articleId, articleTitle }: Props) {
         aria-hidden="true"
         data-clone="true"
       />
-      <span>記事をツイートする</span>
+      <span className={styles.shareButtonText}>記事をツイートする</span>
     </Link>
   );
 }

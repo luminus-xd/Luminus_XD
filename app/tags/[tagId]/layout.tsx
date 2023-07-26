@@ -9,6 +9,12 @@ type Props = {
   };
 };
 
+/**
+ * タグ一覧ページのレイアウト
+ * @param children page.tsxで構築されているnode
+ * @param params.tagId タグのid
+ * @returns
+ */
 export default async function TagsLayout({ children, params }: Props) {
   const { tagId } = params;
   const tag = await getTag(tagId);

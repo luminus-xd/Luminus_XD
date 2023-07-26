@@ -7,6 +7,11 @@ type Props = {
   tags: Tag[];
 };
 
+/**
+ * ヘッダー下のナビゲーションコンポーネント
+ * @param tags 全てのタグ
+ * @returns
+ */
 export default function Nav({ tags }: Props) {
   return (
     <nav className={styles.nav}>

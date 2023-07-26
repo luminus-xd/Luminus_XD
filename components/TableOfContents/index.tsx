@@ -9,6 +9,11 @@ type Props = {
   toc: TocEntry[];
 };
 
+/**
+ * 記事の目次を表示するコンポーネント
+ * @param toc 見出し要素の配列
+ * @returns
+ */
 export default function TableOfContents({ toc }: Props) {
   const isTablet = useMediaQuery(`(max-width: ${MD_BREAKPOINT}px)`);
 

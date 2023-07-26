@@ -3,6 +3,10 @@
 import { useEffect, useState, useCallback } from 'react';
 import styles from './index.module.css';
 
+/**
+ * 記事の読了率を表示するコンポーネント
+ * @returns
+ */
 const ScrollProgressBar = () => {
   const [scrollRatio, setScrollTop] = useState(0);
   const [animationFrameId, setAnimationFrameId] = useState<number | null>(null);

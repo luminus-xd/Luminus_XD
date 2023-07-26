@@ -8,7 +8,13 @@ import Nav from '@/components/Nav';
 import './globals.css';
 import styles from './layout.module.css';
 
+/**
+ * Google Fonts Inter
+ */
 const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-inter' });
+/**
+ * Google Fonts Zen Kaku Gothic New
+ */
 const ZenKakuGothicNew = Zen_Kaku_Gothic_New({
   weight: ['500', '700'],
   subsets: ['latin'],

@@ -8,12 +8,24 @@ if (!process.env.BASE_URL) {
   throw new Error('BASE_URL is required');
 }
 
+/**
+ * Dateオブジェクトをフォーマットして返す
+ * @param date Dateオブジェクト
+ * @returns
+ */
 export const formatDate = (date: string) => {
   const utcDate = new Date(date);
   const jstDate = utcToZonedTime(utcDate, 'Asia/Tokyo');
-  return format(jstDate, 'd MMMM, yyyy');
+  return format(jstDate, 'yyyy-MM-dd');
 };
 
+/**
+ * リッチテキストをフォーマットして返す
+ * シンタックスハイライトをhljsで行う
+ * pre codeタグにtabindexを追加する
+ * @param richText microCMSのリッチテキスト
+ * @returns
+ */
 export const formatRichText = (richText: string) => {
   const $ = cheerio.load(richText);
   const highlight = (text: string, lang?: string) => {
@@ -44,7 +56,7 @@ export type TocEntry = {
 
 /**
  * 目次のオブジェクトを返す
- * @param body
+ * @param body リッチテキスト
  * @returns
  */
 export const renderToc = (body: string): TocEntry[] => {

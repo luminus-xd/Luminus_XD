@@ -14,6 +14,12 @@ type Props = {
 
 export const revalidate = 60;
 
+/**
+ * 検索結果ページ
+ * @param params.current 現在のページ
+ * @param searchParams.q 検索クエリ
+ * @returns
+ */
 export default async function Page({ params, searchParams }: Props) {
   const current = parseInt(params.current as string, 10);
   const data = await getList({
