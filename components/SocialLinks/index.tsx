@@ -34,7 +34,6 @@ export default function SocailLinks() {
             className={styles.motion}
             whileHover={{
               scale: 1.2,
-              boxShadow: '0 0 8px 0 rgba(14, 12, 13, 0.72)',
             }}
             transition={{ type: 'spring', stiffness: 400, damping: 10 }}
           >
