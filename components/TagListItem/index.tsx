@@ -14,6 +14,11 @@ export default function TagListItem({ tag, hasLink = true }: Props) {
         #{tag.name}
       </Link>
     );
+  } else {
+    return (
+      <span className={styles.tag} data-hover-interaction="false">
+        #{tag.name}
+      </span>
+    );
   }
-  return <span className={styles.tag}>#{tag.name}</span>;
 }
