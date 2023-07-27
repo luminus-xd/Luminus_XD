@@ -6,6 +6,7 @@ const withPWA = require('next-pwa')({
   register: true,
   disable: prod ? false : true,
   skipWaiting: true,
+  publicExcludes: ['!robots.txt', '!sitemap.xml'],
 });
 
 module.exports = withPWA({
