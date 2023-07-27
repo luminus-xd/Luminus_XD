@@ -29,6 +29,15 @@ export const metadata = {
   icons: {
     apple: '/apple-touch-icon.png',
   },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Luminus',
+    // startUpImage: [],
+  },
+  formatDetection: {
+    telephone: false,
+  },
   openGraph: {
     title: 'Luminus',
     description: '趣味のフロントエンド技術やゲームなどについて感想を書いていくブログ',
