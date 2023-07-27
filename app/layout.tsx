@@ -46,6 +46,7 @@ export const metadata = {
   alternates: {
     canonical: '/',
   },
+  serviceWorker: '/sw.js',
 };
 
 type Props = {
