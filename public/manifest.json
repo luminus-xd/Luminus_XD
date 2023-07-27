@@ -18,7 +18,7 @@
       "src": "/pwa-icons/maskable_icon.png",
       "sizes": "320x320",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     },
     {
       "src": "/pwa-icons/maskable_icon_x192.png",
