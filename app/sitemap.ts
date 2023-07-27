@@ -16,7 +16,7 @@ export default async function sitemap() {
 
   const routes = ['', '/search'].map((route) => ({
     url: `https://luminus.dev${route}`,
-    lastModified: new Date().toISOString(),
+    lastModified: route === '' ? '2023-06-10T09:49:37.543Z' : new Date().toISOString(),
   }));
 
   return [...routes, ...tags, ...posts];
