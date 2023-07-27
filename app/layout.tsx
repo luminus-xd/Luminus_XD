@@ -25,13 +25,13 @@ const ZenKakuGothicNew = Zen_Kaku_Gothic_New({
 export const metadata = {
   metadataBase: new URL(process.env.BASE_URL || 'http://localhost:3000'),
   title: 'Luminus',
-  description: '好きなものについて',
+  description: '趣味のフロントエンド技術やゲームなどについて感想を書いていくブログ',
   icons: {
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
     title: 'Luminus',
-    description: '好きなものについて',
+    description: '趣味のフロントエンド技術やゲームなどについて感想を書いていくブログ',
     images: '/ogp-luminus.png',
   },
   twitter: {
