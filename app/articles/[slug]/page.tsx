@@ -44,12 +44,12 @@ export async function generateStaticParams() {
 /**
  * 記事の詳細ページ
  * @param params.slug 記事のid
- * @param searchParams.dk 記事の下書きキー
  * @returns
  */
 export default async function Page({ params }: Props) {
+  const { slug } = params;
   const domain = getDomain();
-  const data = await getDetail(params.slug, {});
+  const data = await getDetail(slug, {});
 
   /**
    * 構造化データ
