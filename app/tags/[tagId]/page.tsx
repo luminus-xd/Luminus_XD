@@ -11,6 +11,18 @@ type Props = {
 
 export const revalidate = 60;
 
+export async function generateStaticParams() {
+  const tags = await getList({
+    limit: LIMIT,
+  });
+
+  return tags.contents.map((tag) => ({
+    params: {
+      tagId: tag.id,
+    },
+  }));
+}
+
 /**
  * タグで絞り込んだ記事一覧ページ
  * @param params.tagId タグのid
