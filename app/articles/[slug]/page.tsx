@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { getDetail } from '@/libs/microcms';
+import { getDetail, getList } from '@/libs/microcms';
 import { Article as JsonLDArticle, WebPage as JsonLDWebPage, WithContext } from 'schema-dts';
 import Article from '@/components/Article';
 import ScrollProgressBar from '@/components/ScrollProgressBar';
@@ -9,17 +9,12 @@ type Props = {
   params: {
     slug: string;
   };
-  searchParams: {
-    dk: string;
-  };
 };
 
 export const revalidate = 60;
 
-export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
-  const data = await getDetail(params.slug, {
-    draftKey: searchParams.dk,
-  });
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const data = await getDetail(params.slug);
 
   return {
     title: data.title,
@@ -38,17 +33,25 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
   };
 }
 
+export async function generateStaticParams() {
+  const posts = await getList();
+
+  return posts.contents.map((post) => ({
+    params: {
+      slug: post.id,
+    },
+  }));
+}
+
 /**
  * 記事の詳細ページ
  * @param params.slug 記事のid
  * @param searchParams.dk 記事の下書きキー
  * @returns
  */
-export default async function Page({ params, searchParams }: Props) {
+export default async function Page({ params }: Props) {
   const domain = getDomain();
-  const data = await getDetail(params.slug, {
-    draftKey: searchParams.dk,
-  });
+  const data = await getDetail(params.slug, {});
 
   /**
    * 構造化データ

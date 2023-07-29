@@ -7,6 +7,18 @@ import { getDomain } from '@/libs/utils';
 
 export const revalidate = 0;
 
+export async function generateStaticParams() {
+  const posts = await getList({
+    limit: LIMIT,
+  });
+
+  return posts.contents.map((post) => ({
+    params: {
+      slug: post.id,
+    },
+  }));
+}
+
 export default async function Page() {
   const domain = getDomain();
   const data = await getList({

@@ -5,9 +5,7 @@ import styles from './index.module.css';
 import TagList from '../TagList';
 import ButtonLink from '../ButtonLink';
 import ShareButton from '../ShareButton';
-import dynamic from 'next/dynamic';
-
-const TableOfContents = dynamic(() => import('../TableOfContents'));
+import TableOfContents from '../TableOfContents';
 
 type Props = {
   data: Article;
