@@ -5,8 +5,6 @@ import Pagination from '@/components/Pagination';
 import ArticleList from '@/components/ArticleList';
 import { getDomain } from '@/libs/utils';
 
-export const revalidate = 0;
-
 export async function generateStaticParams() {
   const posts = await getList({
     limit: LIMIT,

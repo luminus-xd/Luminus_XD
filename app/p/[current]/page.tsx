@@ -9,8 +9,6 @@ type Props = {
   };
 };
 
-export const revalidate = 60;
-
 /**
  * ページネーションのページ
  * @param params.current 現在のページ
