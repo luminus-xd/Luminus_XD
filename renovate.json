@@ -3,7 +3,7 @@
   "extends": ["config:base"],
   "dependencyDashboard": false,
   "requiredStatusChecks": null,
-  "baseBranches": ["dev"],
+  "baseBranches": ["stack/renovate"],
   "schedule": "every weekend",
   "packageRules": [
     {
