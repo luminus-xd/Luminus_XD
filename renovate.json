@@ -3,6 +3,16 @@
   "extends": ["config:base"],
   "dependencyDashboard": false,
   "requiredStatusChecks": null,
-  "schedule": ["every 1 hour after 00:00 and before 23:59 every day"],
-  "automergeSchedule": ["every 1 hour after 00:00 and before 23:59 every day"]
+  "baseBranches": ["stack/renovate"],
+  "schedule": "every weekend",
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
+    {
+      "depTypeList": ["devDependencies"],
+      "automerge": true
+    }
+  ]
 }
