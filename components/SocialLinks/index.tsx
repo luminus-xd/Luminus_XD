@@ -24,7 +24,7 @@ export default function SocailLinks() {
           >
             <Image
               className={styles.twitterX}
-              src="/images/twitter-x-logo.svg"
+              src="/images/twitter-x-logo-white.svg"
               alt="LuminusのX（旧Twitter）"
               width={40}
               height={40}
