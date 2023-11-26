@@ -1,6 +1,6 @@
 {
   "name": "luminus",
-  "version": "0.1.0",
+  "version": "1",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development next dev",
@@ -31,7 +31,7 @@
     "framer-motion": "^10.13.1",
     "highlight.js": "^11.7.0",
     "microcms-js-sdk": "^2.3.2",
-    "next": "^13.4.4",
+    "next": "^14.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "schema-dts": "^1.1.2"
@@ -40,16 +40,19 @@
     "@markuplint/jsx-parser": "^3.9.0",
     "@markuplint/react-spec": "^3.10.0",
     "@types/cheerio": "^0.22.31",
-    "@types/node": "18.17.1",
-    "@types/react": "18.0.28",
-    "@types/react-dom": "18.0.11",
+    "@types/node": "20.10.0",
+    "@types/react": "18.2.38",
+    "@types/react-dom": "18.2.17",
     "cross-env": "^7.0.3",
-    "eslint": "8.46.0",
-    "eslint-config-next": "13.2.4",
-    "eslint-config-prettier": "^8.7.0",
+    "eslint": "8.54.0",
+    "eslint-config-next": "14.0.3",
+    "eslint-config-prettier": "^9.0.0",
     "markuplint": "^3.12.0",
     "prettier": "^3.0.0",
-    "typescript": "4.9.5",
+    "typescript": "5.3.2",
     "webpack": "^5.88.2"
+  },
+  "volta": {
+    "node": "20.10.0"
   }
 }
