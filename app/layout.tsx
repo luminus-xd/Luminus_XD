@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { getTagList } from '@/libs/microcms';
 import { LIMIT } from '@/constants';
 import { Inter, Zen_Kaku_Gothic_New } from 'next/font/google';
+import Head from 'next/head';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Nav from '@/components/Nav';
@@ -28,6 +29,15 @@ export const metadata = {
   description: '趣味のフロントエンド技術やゲームなどについて感想を書いていくブログ',
   icons: {
     apple: '/apple-touch-icon.png',
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Luminus',
+    // startUpImage: [],
+  },
+  formatDetection: {
+    telephone: false,
   },
   openGraph: {
     title: 'Luminus',
@@ -58,6 +68,9 @@ export default async function RootLayout({ children }: Props) {
   });
   return (
     <html lang="ja">
+      <Head>
+        <link rel="preconnect" href="https://images.microcms-assets.io/assets/" />
+      </Head>
       <body className={`${inter.variable} ${ZenKakuGothicNew.variable}`}>
         <Header />
         <Nav tags={tags.contents} />
