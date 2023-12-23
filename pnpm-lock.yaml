@@ -15,11 +15,11 @@ dependencies:
     specifier: ^1.0.0-rc.12
     version: 1.0.0-rc.12
   date-fns:
-    specifier: ^2.29.3
-    version: 2.29.3
+    specifier: ^3.0.0
+    version: 3.0.6
   date-fns-tz:
     specifier: ^2.0.0
-    version: 2.0.0(date-fns@2.29.3)
+    version: 2.0.0(date-fns@3.0.6)
   domhandler:
     specifier: ^5.0.3
     version: 5.0.3
@@ -2830,17 +2830,16 @@ packages:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
     dev: true
 
-  /date-fns-tz@2.0.0(date-fns@2.29.3):
+  /date-fns-tz@2.0.0(date-fns@3.0.6):
     resolution: {integrity: sha512-OAtcLdB9vxSXTWHdT8b398ARImVwQMyjfYGkKD2zaGpHseG2UPHbHjXELReErZFxWdSLph3c2zOaaTyHfOhERQ==}
     peerDependencies:
       date-fns: '>=2.0.0'
     dependencies:
-      date-fns: 2.29.3
+      date-fns: 3.0.6
     dev: false
 
-  /date-fns@2.29.3:
-    resolution: {integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==}
-    engines: {node: '>=0.11'}
+  /date-fns@3.0.6:
+    resolution: {integrity: sha512-W+G99rycpKMMF2/YD064b2lE7jJGUe+EjOES7Q8BIGY8sbNdbgcs9XFTZwvzc9Jx1f3k7LB7gZaZa7f8Agzljg==}
     dev: false
 
   /dayjs@1.11.9:
