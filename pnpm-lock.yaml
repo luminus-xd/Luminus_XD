@@ -53,8 +53,8 @@ devDependencies:
     specifier: ^4.0.0
     version: 4.0.0(typescript@5.3.3)
   '@markuplint/react-spec':
-    specifier: ^3.10.0
-    version: 3.10.0(@markuplint/ml-core@3.12.0)
+    specifier: ^4.0.0
+    version: 4.0.0
   '@types/cheerio':
     specifier: ^0.22.31
     version: 0.22.31
@@ -1634,13 +1634,10 @@ packages:
       - supports-color
     dev: true
 
-  /@markuplint/react-spec@3.10.0(@markuplint/ml-core@3.12.0):
-    resolution: {integrity: sha512-v1kKth9H+i0gyxtrBnP6QEWKoIA/qGvpuw2S+WIldLrpfil9xL0S5IYMxeTOWa4pkK5UucOOgQYZWqkxjz7xdw==}
-    peerDependencies:
-      '@markuplint/ml-core': 3.x
+  /@markuplint/react-spec@4.0.0:
+    resolution: {integrity: sha512-1eKG9e9tERggFIDApvMjB/uFakOarlK6FX2iFgld4nERAFQIIOPAXiPfDw8ZFcPB2VKfH42BK8DqhP9jcLCs4g==}
     dependencies:
-      '@markuplint/ml-core': 3.12.0
-      '@markuplint/ml-spec': 3.11.0
+      '@markuplint/ml-spec': 4.0.0
     transitivePeerDependencies:
       - supports-color
     dev: true
