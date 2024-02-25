@@ -54,7 +54,7 @@ devDependencies:
     version: 4.2.0(typescript@5.3.3)
   '@markuplint/react-spec':
     specifier: ^4.0.0
-    version: 4.0.0
+    version: 4.1.0
   '@types/cheerio':
     specifier: ^0.22.31
     version: 0.22.35
@@ -1631,10 +1631,10 @@ packages:
       - supports-color
     dev: true
 
-  /@markuplint/react-spec@4.0.0:
-    resolution: {integrity: sha512-1eKG9e9tERggFIDApvMjB/uFakOarlK6FX2iFgld4nERAFQIIOPAXiPfDw8ZFcPB2VKfH42BK8DqhP9jcLCs4g==}
+  /@markuplint/react-spec@4.1.0:
+    resolution: {integrity: sha512-zCEbDa07LysXrWYhkTjVtKGhjJ87RMJhxRD3Y352qT9o2DwMPUD3iM6U/vTBqKbiK4f/GA7GZpQRaud3d/KrGQ==}
     dependencies:
-      '@markuplint/ml-spec': 4.0.0
+      '@markuplint/ml-spec': 4.1.0
     transitivePeerDependencies:
       - supports-color
     dev: true
