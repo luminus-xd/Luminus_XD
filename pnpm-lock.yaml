@@ -27,8 +27,8 @@ dependencies:
     specifier: ^0.1.13
     version: 0.1.13
   framer-motion:
-    specifier: ^10.13.1
-    version: 10.18.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^11.0.0
+    version: 11.0.8(react-dom@18.2.0)(react@18.2.0)
   highlight.js:
     specifier: ^11.7.0
     version: 11.9.0
@@ -3605,8 +3605,8 @@ packages:
       signal-exit: 4.0.2
     dev: true
 
-  /framer-motion@10.18.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-oGlDh1Q1XqYPksuTD/usb0I70hq95OUzmL9+6Zd+Hs4XV0oaISBa/UUMSjYiq6m8EUF32132mOJ8xVZS+I0S6w==}
+  /framer-motion@11.0.8(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-1KSGNuqe1qZkS/SWQlDnqK2VCVzRVEoval379j0FiUBJAZoqgwyvqFkfvJbgW2IPFo4wX16K+M0k5jO23lCIjA==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
