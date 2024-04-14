@@ -54,7 +54,7 @@ devDependencies:
     version: 4.6.0(typescript@5.4.5)
   '@markuplint/react-spec':
     specifier: ^4.0.0
-    version: 4.3.0
+    version: 4.4.0
   '@types/cheerio':
     specifier: ^0.22.31
     version: 0.22.35
@@ -1643,10 +1643,10 @@ packages:
       - supports-color
     dev: true
 
-  /@markuplint/react-spec@4.3.0:
-    resolution: {integrity: sha512-eIS3IzXqxK33IYDTtLuzoi3gQYCrKfwGYusSGKi2w7ji96qJnwFfasVjnsS3I08fb2p84bnX8ygL7Da8DqbxIA==}
+  /@markuplint/react-spec@4.4.0:
+    resolution: {integrity: sha512-JmDGzPgczB/M5Z8sAmb6YdXFEhhRpI3p+rIO9Vz6pipY471lDyI7koseclzPSE2RwNPFmgxnBBtysrWQg5NQpw==}
     dependencies:
-      '@markuplint/ml-spec': 4.3.0
+      '@markuplint/ml-spec': 4.4.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2794,7 +2794,7 @@ packages:
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0}
     dependencies:
       mdn-data: 2.0.30
-      source-map-js: 1.0.2
+      source-map-js: 1.2.0
     dev: true
 
   /css-what@6.1.0:
@@ -5452,15 +5452,9 @@ packages:
     resolution: {integrity: sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw==}
     dev: false
 
-  /source-map-js@1.0.2:
-    resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
-    engines: {node: '>=0.10.0'}
-    dev: true
-
   /source-map-js@1.2.0:
     resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
     engines: {node: '>=0.10.0'}
-    dev: false
 
   /source-map-support@0.5.21:
     resolution: {integrity: sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==}
