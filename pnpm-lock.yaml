@@ -56,7 +56,7 @@ importers:
         version: 4.6.1(typescript@5.4.5)
       '@markuplint/react-spec':
         specifier: ^4.0.0
-        version: 4.4.0
+        version: 4.4.1
       '@types/cheerio':
         specifier: ^0.22.31
         version: 0.22.35
@@ -809,8 +809,8 @@ packages:
   '@markuplint/parser-utils@4.5.1':
     resolution: {integrity: sha512-KoQMeiKMsE5h9eDAAJ7Wkn+maiu9i2mcaLcwDxnxv/r0ZxyUZKuGSF2S369vy8WgDOMGS8nCdFMPpQ/c6CJ34w==}
 
-  '@markuplint/react-spec@4.4.0':
-    resolution: {integrity: sha512-JmDGzPgczB/M5Z8sAmb6YdXFEhhRpI3p+rIO9Vz6pipY471lDyI7koseclzPSE2RwNPFmgxnBBtysrWQg5NQpw==}
+  '@markuplint/react-spec@4.4.1':
+    resolution: {integrity: sha512-Ey2NK/aZdIVMiQ7pYZXS8yIzg3bjwmW/lDbEGKMsVib6adKBIkd48RYHNh31CyNJ5dFj5asvI4rxHM44RUUIRg==}
 
   '@markuplint/rules@4.6.0':
     resolution: {integrity: sha512-zpyQ7C0huQzBprEEE3yLi27yDqjFlORtRAZjkI/tHEB2u1xAJGg4xpfMfsEGftmLFmcovbHxHFQNIG0iBoMh/g==}
@@ -4325,9 +4325,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@markuplint/react-spec@4.4.0':
+  '@markuplint/react-spec@4.4.1':
     dependencies:
-      '@markuplint/ml-spec': 4.4.0
+      '@markuplint/ml-spec': 4.4.1
     transitivePeerDependencies:
       - supports-color
 
