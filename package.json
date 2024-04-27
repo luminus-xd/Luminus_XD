@@ -32,8 +32,8 @@
     "highlight.js": "^11.7.0",
     "microcms-js-sdk": "^2.3.2",
     "next": "^14.0.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "schema-dts": "^1.1.2"
   },
   "devDependencies": {
@@ -41,8 +41,8 @@
     "@markuplint/react-spec": "^4.0.0",
     "@types/cheerio": "^0.22.31",
     "@types/node": "20.12.7",
-    "@types/react": "18.2.79",
-    "@types/react-dom": "18.2.25",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.0",
     "cross-env": "^7.0.3",
     "eslint": "9.1.1",
     "eslint-config-next": "14.2.3",
